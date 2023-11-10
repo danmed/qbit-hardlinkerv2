@@ -7,17 +7,15 @@ torrent_label="$3"
 
 [ "${#torrent_label}" -gt 4 ] && torrent_label="$3" || torrent_label="SYNC"
 
-
-echo "label $torrent_label end " > test.txt
-
 if ["$torrent_label" == "SEED"];
     then
-        echo "I'm fucking off" > test.txt
         exit 1
     fi
 
 # The destination folder
-destination="/home4/foghorn/downloads/qbittorrent/$torrent_label"
-echo "$destination" > test.txt
+destination="/home/user/downloads/qbittorrent/$torrent_label"
+
+# Single file torrents
 cp -l "$download_path/$torrent_name" "$destination/"
+# folders
 cp -lR "$download_path/$torrent_name" "$destination/"
