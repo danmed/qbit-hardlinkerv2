@@ -1,9 +1,13 @@
 # qbit-hardlinkerv2 (based on Categories)
-Bash script to automatically hardlink completed torrents
+Borrowed heavily from
 
-When a torrent is completed this script will automatically recreate the directory structure¹ and create hardlinks of all the source files to the destination directory of your choice. This is really practical if you want keep seeding on private trackers while being able to post-process your files for your media server without wasting storage space.
+https://github.com/gravelfreeman/qbit-hardlinker
 
-¹The script can only re-create 3 levels of directories so be sure to check all your torrents before blindly deleting your files. I wasn't able to increase that limit due to my little knowledge in coding, any help would be greatly appreciated.
+Mostly customised for my own requirements.
+
+* No Label / Category gets hardlinked to a folder called SYNC
+* Label of SEED does nothing and exits
+* Handles single files and folders of files (not elegantly but it does)
 
 ## How to use the script
 
