@@ -24,7 +24,7 @@ if ["$torrent_label" == "SEED"];
 
 # The destination folder
 
-destination="/home4/foghorn/downloads/qbittorrent/$torrent_label"
+destination="/home4/username/downloads/qbittorrent/$torrent_label"
 
 # Copy single file torrent and exit if successful
 
