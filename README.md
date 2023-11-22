@@ -1,9 +1,9 @@
 # qbit-hardlinkerv2 (based on Categories)
-Borrowed heavily from
+Adapted heavily from
 
 https://github.com/gravelfreeman/qbit-hardlinker
 
-Mostly customised for my own requirements.
+Customised to my own requirements and tested on a shared Ultra.cc seedbox.
 
 * No Label / Category gets hardlinked to a folder called SYNC
 * Label of SEED does nothing and exits
@@ -31,8 +31,8 @@ nano qbit-hardlinker.sh
 
 4. qBittorent > Tools > Options > Downloads Tab and scroll down to *Run external program* section and check the box *Run external program on torrent finished*
 
-5. Add the script path, ``%N`` and ``%D`` and ``%L`` parameters in the text field to match the example below
+5. Add the script path, ``%N`` and ``%D`` ``%R`` and ``%L`` parameters in the text field to match the example below
 
 ````
-/configs/qbit-hardlinker.sh "%N" "%D" "%L"
+/home/qbit-hardlinker/qbit-hardlinker.sh "%N" "%D" "%R" "%L"
 ````
