@@ -31,7 +31,7 @@ nano qbit-hardlinker.sh
 
 4. qBittorent > Tools > Options > Downloads Tab and scroll down to *Run external program* section and check the box *Run external program on torrent finished*
 
-5. Add the script path, ``%N`` and ``%D`` ``%R`` and ``%L`` parameters in the text field to match the example below
+5. Add the script path, ``%N`` and ``%D`` ``%R`` and ``%L`` parameters in the text field to match the example below (THE ORDER IS IMPORTANT!)
 
 ````
 /home/qbit-hardlinker/qbit-hardlinker.sh "%N" "%D" "%R" "%L"
